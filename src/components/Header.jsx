@@ -1,4 +1,4 @@
-
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Header = () => {
     return (
@@ -6,6 +6,7 @@ const Header = () => {
             <h1>IP Address Tracker</h1>
             <div>
                 <input type="search" name="search" id="search" />
+                <button className="bg-black text-white"><MdKeyboardArrowRight /></button>
             </div>
         </header>
     )
