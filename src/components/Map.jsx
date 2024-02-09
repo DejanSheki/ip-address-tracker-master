@@ -10,7 +10,6 @@ const iconLocation = new Icon({
 
 function MapComponent(props) {
   const map = useMap();
-  console.log("map center:", map.getCenter());
   map.panTo(props.mapCentre);
   return null;
 }
