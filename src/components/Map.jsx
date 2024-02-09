@@ -5,7 +5,7 @@ import iconLoc from "../assets/images/icon-location.svg";
 
 const iconLocation = new Icon({
   iconUrl: iconLoc,
-  iconSize: [30, 40],
+  iconSize: [35, 40],
 });
 
 function MapComponent(props) {
@@ -32,9 +32,7 @@ const Map = (props) => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={props.mapCentre} icon={iconLocation}>
-          <Popup>Jeeej</Popup>
-        </Marker>
+        <Marker position={props.mapCentre} icon={iconLocation}></Marker>
       </MapContainer>
     </div>
   );
