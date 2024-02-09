@@ -25,6 +25,7 @@ const Map = (props) => {
         center={[latitude, longitude]}
         zoom={13}
         style={{ height: "100%", width: "100%", flex: 1 }}
+        zoomControl={false}
       >
         <MapComponent mapCentre={props.mapCentre} />
         <TileLayer

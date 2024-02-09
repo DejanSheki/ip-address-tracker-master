@@ -1,21 +1,24 @@
 const Info = ({ infoData }) => {
     return (
-        <section className="flex absolute -top-[10%] z-10 w-[50%] bg-white p-6">
-            <article className="w-1/5">
-                <h2>IP ADDRESS</h2>
-                <p>{infoData.ip}</p>
+        <section className="flex flex-col justify-between items-center md:gap-5 md:flex-row absolute z-10 w-[90%] md:w-[80%] bg-white p-6 rounded-xl  -translate-y-[40%] md:-translate-y-[50%]">
+            <article className="w-full md:w-[23%] text-center md:text-start">
+                <h2 className="text-DarkGray font-medium text-sm">IP ADDRESS</h2>
+                <p className="font-bold leading-none mt-2 text-lg">{infoData.ip}</p>
             </article>
-            <article className="w-1/5">
-                <h2>LOCATION</h2>
-                <p>{infoData.city}, {infoData.country_name}</p>
+            <div className="w-0 md:w-[1px] bg-DarkGray h-3 md:h-7"></div>
+            <article className="w-full md:w-[23%] text-center md:text-start">
+                <h2 className="text-DarkGray font-medium text-sm">LOCATION</h2>
+                <p className="font-bold leading-none mt-2 text-lg">{infoData.city}, {infoData.country_name}</p>
             </article>
-            <article className="w-1/5">
-                <h2>TIMEZONE</h2>
-                <p>UTC {infoData.utc_offset ? infoData.utc_offset.slice(0, 3) : infoData.utc_offset}:{infoData.utc_offset ? infoData.utc_offset.slice(3) : infoData.utc_offset}</p>
+            <div className="w-0 md:w-[1px] bg-DarkGray h-3 md:h-7"></div>
+            <article className="w-full md:w-[23%] text-center md:text-start">
+                <h2 className="text-DarkGray font-medium text-sm">TIMEZONE</h2>
+                <p className="font-bold leading-none mt-2 text-lg">UTC {infoData.utc_offset ? infoData.utc_offset.slice(0, 3) : infoData.utc_offset}:{infoData.utc_offset ? infoData.utc_offset.slice(3) : infoData.utc_offset}</p>
             </article>
-            <article className="w-1/5">
-                <h2>ISP</h2>
-                <p>{infoData.org}</p>
+            <div className="w-0 md:w-[1px] bg-DarkGray h-3 md:h-7"></div>
+            <article className="w-full md:w-[23%] text-center md:text-start">
+                <h2 className="text-DarkGray font-medium text-sm">ISP</h2>
+                <p className="font-bold leading-none mt-2 text-lg">{infoData.org}</p>
             </article>
         </section>
     );
