@@ -25,7 +25,7 @@ const Data = () => {
     }, []);
 
     return (
-        <div className="w-[1440px] h-[75vh] flex-wrap relative flex flex-col">
+        <div className="w-full h-[75vh] flex-wrap relative flex flex-col items-center">
             <Info infoData={clientsData} />
             <Map mapCentre={[latitude, longitude]} />
         </div>

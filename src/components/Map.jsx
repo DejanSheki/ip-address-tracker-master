@@ -1,5 +1,12 @@
-import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import { Icon } from "leaflet";
+import iconLoc from "../assets/images/icon-location.svg";
+
+const iconLocation = new Icon({
+  iconUrl: iconLoc,
+  iconSize: [30, 40],
+});
 
 function MapComponent(props) {
   const map = useMap();
@@ -13,17 +20,20 @@ const Map = (props) => {
   const longitude = -0.09;
 
   return (
-    <div className="w-[1440px] h-[75vh] flex flex-wrap relative z-0">
+    <div className="w-full h-[75vh] flex flex-wrap z-0">
       <MapContainer
         center={[latitude, longitude]}
         zoom={13}
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "100%", width: "100%", flex: 1 }}
       >
         <MapComponent mapCentre={props.mapCentre} />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <Marker position={props.mapCentre} icon={iconLocation}>
+          <Popup>Jeeej</Popup>
+        </Marker>
       </MapContainer>
     </div>
   );
