@@ -3,7 +3,7 @@
 ![](./public/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/ip-address-tracker-master)
-- Live Site URL: [Live Preview](https://ip-address-tracker.vercel.app/)
+- Live Site URL: [Live Preview](https://ip-address-tracker-dejanlukic-solution.vercel.app/)
 
 ## Technologies Used
 
