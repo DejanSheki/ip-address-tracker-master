@@ -11,6 +11,10 @@ export default {
         'DarkGray': 'hsl(0, 0%, 59%)',
       }
     },
+    screens: {
+      'tall': { 'raw': '(max-height: 800px)' },
+      // => @media (min-height: 800px) { ... }
+    }
   },
   plugins: [],
 }

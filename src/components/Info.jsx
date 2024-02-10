@@ -1,6 +1,6 @@
 const Info = ({ infoData }) => {
   return (
-    <section className="flex flex-col justify-between items-center md:gap-5 md:flex-row absolute z-10 w-[90%] md:w-[80%] bg-white p-6 rounded-xl  -translate-y-[40%] md:-translate-y-[50%]">
+    <section className="flex flex-col justify-between items-center md:gap-5 md:flex-row absolute z-10 w-[90%] md:w-[80%] bg-white p-6 rounded-xl  -translate-y-[40%] md:-translate-y-[50%] tall:-translate-y-[30%]">
       <article className="w-full md:w-[22%] text-center md:text-start">
         <h2 className="text-DarkGray font-medium text-sm md:text-base">
           IP ADDRESS
