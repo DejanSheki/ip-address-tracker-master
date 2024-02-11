@@ -18,6 +18,7 @@ const Header = ({ onSearch, searchValue, onClick, onKeyDown }) => {
                 <button
                     className="bg-black text-white cursor-pointer px-4 py-[0.92rem] rounded-e-xl hover:bg-[rgba(43,43,43,0.9)]"
                     onClick={onClick}
+                    title="Search"
                 ><MdKeyboardArrowRight size={26} /></button>
             </div>
         </header>
